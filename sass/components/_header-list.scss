@@ -1,0 +1,38 @@
+
+.current {
+    color: $accent-link-color;
+
+    &::after {
+    content: "";
+    bottom: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    display: block;
+    height: 4px;
+    width: 100%;
+}
+}
+
+.studio::after {
+    background-image: url(../svg/hover-studio.svg);
+}
+
+.portfolio::after {
+    background-image: url(../svg/hover-portfolio.svg);
+}
+
+.header-list {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 90px;
+    margin: 0px; 
+
+    .item{
+    margin-right: 45px;
+}
+
+    .item:last-child {
+    margin: 0px;
+}
+}

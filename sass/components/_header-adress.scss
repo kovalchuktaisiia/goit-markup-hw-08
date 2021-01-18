@@ -1,0 +1,48 @@
+
+.header-adres {
+    display: flex;
+    position: right;
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+    margin-left: auto;
+
+    & .email-phone {
+    font-weight: 500;
+    }
+
+    & .item + .item {
+    margin-left: 40px;
+    }
+}
+
+.envelope {
+    width: 16px;
+    height: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: currentColor;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: currentColor;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header a:hover, .header a:hover svg,
+.header a:focus, .header a:focus svg {
+    color: $accent-link-color;
+    fill: $accent-link-color;
+}

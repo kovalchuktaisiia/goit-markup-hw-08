@@ -1,0 +1,51 @@
+
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features-list {    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $h2-color;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.feature-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $button-background;
+    margin-bottom: 30px;
+}
+
+.antena::before {
+    content: "";
+    background-image: url(../svg/antenna.svg);
+}
+
+.clock::before {
+    content: "";
+    background-image: url(../svg/clock.svg);
+}
+
+.diagrama::before {
+    content: "";
+    background-image: url(../svg/diagram.svg);
+}
+
+.astronaut::before {
+    content: "";
+    background-image: url(../svg/astronaut.svg);
+}
+
+.list .feature-item + .feature-item{
+    margin-left: 40px;
+}

@@ -1,0 +1,83 @@
+.profession {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.our-team {
+    background: $button-background;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 90px;
+}
+
+.our-team-title {
+  margin-bottom: 50px;
+  padding-bottom: 0px;
+}
+
+.team-player {
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.team-player-item {
+    background-color: $white-background;
+    border-color: $h2-color;
+    width: 270px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+.list .team-player-item + .team-player-item {
+    margin-left: 35px;
+}
+
+.team-player-photo {
+    padding: 0px;
+}
+
+.sosial-media-list {
+    display: flex;
+    padding-left: 32px;
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 0px;
+  justify-content: center;
+
+  & a:hover,
+  & a:focus {
+  background-color: $accent-link-color;
+  fill: $white-background;
+}
+}
+
+.sosial-media-item a {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    fill: var(--icon-colour);
+ 
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.media-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
