@@ -253,6 +253,16 @@ h3 {
   cursor: pointer;
 }
 
+.what-we-do {
+  display: none;
+}
+
+@media screen and (min-width: 1140px) {
+  .what-we-do {
+    display: block;
+  }
+}
+
 .project-item-link {
   text-decoration: none;
   margin: 0px;
