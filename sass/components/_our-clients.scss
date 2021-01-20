@@ -37,14 +37,8 @@
     }
 }
 
-// .clients-item a:hover, .clients-item a:hover svg,
-// .clients-item a:focus, .clients-item a:focus svg {
-//     border-color: $accent-link-color;
-//     fill: $accent-link-color;
-// }
-
 .clients-icon {
-    fill: var(--icon-colour);
+    fill: $icon-colour;
 
     transition-property: fill;
     transition-duration: 250ms;

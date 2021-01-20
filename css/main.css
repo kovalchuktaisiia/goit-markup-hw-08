@@ -76,7 +76,7 @@ header a {
 
 .current::after {
   content: "";
-  bottom: 0;
+  bottom: -32px;
   position: absolute;
   background-repeat: no-repeat;
   display: block;
@@ -100,6 +100,10 @@ header a {
   padding-bottom: 32px;
   padding-left: 90px;
   margin: 0px;
+}
+
+.header-list a {
+  position: relative;
 }
 
 .header-list .item {
@@ -204,7 +208,6 @@ h3 {
   background-repeat: no-repeat;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main_banner.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main_banner.jpg);
-  text-align: center;
   height: 600px;
   text-align: center;
   padding-top: 200px;
@@ -550,13 +553,72 @@ h3 {
   vertical-align: middle;
 }
 
+.our-clients {
+  padding-top: 94px;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  padding-bottom: 94px;
+  margin: 0px;
+}
+
+.clients-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid;
+  border-color: #AFB1B8;
+  border-radius: 4px;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-item a:hover, .clients-item a:hover svg, .clients-item a:focus, .clients-item a:focus svg {
+  border-color: #2196F3;
+  fill: #2196F3;
+}
+
+.clients-item {
+  margin-right: 30px;
+}
+
+.clients-item:last-child {
+  margin-right: 0;
+}
+
+.clients-icon {
+  fill: #AFB1B8;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .profession {
   text-align: center;
   padding-bottom: 25px;
 }
 
 .our-team {
-  background: #F5F4FA;
+  background: #FFFFFF;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -626,7 +688,7 @@ h3 {
           align-items: center;
   border-radius: 50%;
   margin-right: 10px;
-  fill: var(--icon-colour);
+  fill: #AFB1B8;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
@@ -640,65 +702,6 @@ h3 {
   height: 20px;
   margin-left: auto;
   margin-right: auto;
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.our-clients {
-  padding-top: 94px;
-}
-
-.clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0px;
-  padding-bottom: 94px;
-  margin: 0px;
-}
-
-.clients-item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid;
-  border-color: #AFB1B8;
-  border-radius: 4px;
-  -webkit-transition-property: border-color;
-  transition-property: border-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-item a:hover, .clients-item a:hover svg, .clients-item a:focus, .clients-item a:focus svg {
-  border-color: #2196F3;
-  fill: #2196F3;
-}
-
-.clients-item {
-  margin-right: 30px;
-}
-
-.clients-item:last-child {
-  margin-right: 0;
-}
-
-.clients-icon {
-  fill: var(--icon-colour);
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
