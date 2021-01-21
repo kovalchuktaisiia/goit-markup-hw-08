@@ -1,7 +1,11 @@
-
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
+
+     @media screen and (max-width: 480px) {
+     padding-top: 60px;
+     padding-bottom: 60px;
+     }
 }
 
 .features-list {    
@@ -13,6 +17,16 @@
     color: $h2-color;
     text-align: left;
     padding-bottom: 10px;
+
+    @media screen and (max-width: 480px) {
+        text-align: center;
+        }
+}
+
+.feature-item {
+    @media screen and (max-width: 480px) {
+        height: 226px;
+        }
 }
 
 .feature-item::before {
@@ -48,4 +62,8 @@
 
 .list .feature-item + .feature-item{
     margin-left: 40px;
+
+    @media screen and (max-width: 480px) {
+        margin-left: 0px;
+        }
 }
