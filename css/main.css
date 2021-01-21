@@ -219,6 +219,14 @@ h1 {
   letter-spacing: 0.06em;
 }
 
+@media screen and (max-width: 480px) {
+  h1 {
+    text-align: center;
+    width: 450px;
+    font-size: 26px;
+  }
+}
+
 h2 {
   color: #212121;
   text-align: center;
@@ -262,10 +270,11 @@ h3 {
 
 @media screen and (max-width: 480px) {
   .main-banner {
-    display: inline-block;
+    display: block;
     height: 400px;
     padding-top: 120px;
     padding-bottom: 120px;
+    width: 480px;
   }
 }
 
@@ -284,6 +293,12 @@ h3 {
   height: 50px;
   min-width: 200px;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .to-order {
+    display: block;
+  }
 }
 
 .to-order:hover, .to-order:focus {
