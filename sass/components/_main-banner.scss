@@ -1,5 +1,6 @@
 
 .main-banner {
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-image: 
@@ -15,6 +16,13 @@
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0%;
+
+    @media screen and (max-width: 480px) {
+        display: inline-block;
+        height: 400px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
 }
 
 .to-order {
@@ -36,5 +44,10 @@
     &:hover,
     &:focus {
     cursor: pointer;
+
+    // @media screen and (max-width: 480px) {
+    //     display: inline-block;
+    //     height: 400px;
+    //   }
 }
 }

@@ -9,7 +9,12 @@ h1 {
     text-align: center;
     margin: 0%;
     letter-spacing: 0.06em;
+
+    // @media screen and (max-width: 480px) {
+    //     display: inline-block;
+    //     }
 }
+
 
 h2 {
     color: $h2-color;

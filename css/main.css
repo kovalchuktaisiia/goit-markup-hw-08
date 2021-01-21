@@ -240,6 +240,15 @@ h3 {
   margin: 0%;
 }
 
+@media screen and (max-width: 480px) {
+  .main-banner {
+    display: inline-block;
+    height: 400px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
 .to-order {
   display: inline-block;
   background: #2196F3;
