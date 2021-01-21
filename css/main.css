@@ -809,6 +809,7 @@ p {
 @media screen and (max-width: 480px) {
   .feature-item {
     height: 226px;
+    width: 450px;
   }
 }
 
