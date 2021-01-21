@@ -1,11 +1,20 @@
 .our-clients {
     padding-top: 94px;
+
+    @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    }
 }
 .clients {
     display: flex;
     padding: 0px;
     padding-bottom: 94px;
     margin: 0px;
+
+    @media screen and (min-width: 480px) {
+        display: inline-block;
+        padding-bottom: 60px;
+        }
   }
 
  .clients-item a {
@@ -22,6 +31,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  
     &:hover, &:hover svg,
     &:focus, &:focus svg {
     border-color: $accent-link-color;
