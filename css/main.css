@@ -864,25 +864,26 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .features-set .feature-item {
-    width: calc(100% - 2 * 30px)/2;
+  .features-set .features-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1140px) {
-  .features-set .feature-item {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+  .features-set .features-item {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .features-set .feature-item:not(:last-child) {
+  .features-set .features-item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-.features-set .feature-item::before {
+.features-set .features-item::before {
   display: block;
   content: "";
   height: 120px;
