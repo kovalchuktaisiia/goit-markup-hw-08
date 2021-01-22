@@ -230,6 +230,7 @@ h3 {
   color: #212121;
   margin: 0%;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .main-banner {
@@ -820,38 +821,30 @@ p {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 
-.features-list {
+.features-item-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  text-align: left;
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 480px) {
-  .features-list {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .feature-item {
-    height: 226px;
-    width: 450px;
+@media screen and (min-width: 480px) {
+  .features-item-title {
+    text-align: left;
   }
 }
 
@@ -886,12 +879,12 @@ p {
 }
 
 .list .feature-item + .feature-item {
-  margin-left: 40px;
+  margin-left: 0px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .list .feature-item + .feature-item {
-    margin-left: 0px;
+    margin-left: 40px;
   }
 }
 
