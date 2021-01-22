@@ -765,7 +765,7 @@ h3 {
   margin-left: 35px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .list .team-player-item + .team-player-item {
     margin-left: 0px;
   }
@@ -788,7 +788,7 @@ h3 {
           justify-content: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .sosial-media-list {
     margin-bottom: 0px;
   }

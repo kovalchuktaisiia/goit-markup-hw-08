@@ -52,7 +52,7 @@
 .list .team-player-item + .team-player-item {
   margin-left: 35px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     margin-left: 0px;
     }
 }
@@ -69,7 +69,7 @@
   padding: 0px;
 justify-content: center;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     margin-bottom: 0px;
   }
 
