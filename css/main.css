@@ -842,7 +842,7 @@ p {
   padding-bottom: 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .features-item-title {
     text-align: left;
   }
@@ -859,12 +859,26 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .features-set .feature-item {
-    width: 50%;
+    width: calc(100% - 2 * 30px)/2;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .features-set .feature-item {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features-set .feature-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -896,10 +910,6 @@ p {
 .features-set .astronaut::before {
   content: "";
   background-image: url(../svg/astronaut.svg);
-}
-
-.list .feature-item + .feature-item {
-  margin-left: 0px;
 }
 
 .section-projects {
