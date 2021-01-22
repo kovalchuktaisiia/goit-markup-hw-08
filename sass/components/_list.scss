@@ -1,12 +1,16 @@
 .list {
-    display: flex;
+    display: block;
     text-align: center;
     padding: 0px;
     margin: 0px;
     align-items: center;
 
-    @media screen and (max-width: 480px) {
-        display: block;
-        width: 450px;
+    @media screen and (min-width: 480px) {
+        display: flex;       
     }
-    }
+}
+
+
+ul {
+   list-style: none;
+   }
