@@ -724,6 +724,21 @@ h3 {
   }
 }
 
+.our-team-set {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .team-player {
   letter-spacing: 0.03em;
   font-weight: 500;
@@ -736,25 +751,28 @@ h3 {
 .team-player-item {
   background-color: #FFFFFF;
   border-color: #212121;
-  width: 270px;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .team-player-item {
-    width: 450px;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
-.list .team-player-item + .team-player-item {
-  margin-left: 35px;
+@media screen and (min-width: 1140px) {
+  .team-player-item {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
 }
 
-@media screen and (max-width: 480px) {
-  .list .team-player-item + .team-player-item {
-    margin-left: 0px;
+@media screen and (max-width: 767px) {
+  .team-player-item:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
 
@@ -766,19 +784,12 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 32px;
   margin: 0px;
-  margin-bottom: 30px;
   padding: 0px;
+  padding-bottom: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media screen and (max-width: 480px) {
-  .sosial-media-list {
-    margin-bottom: 0px;
-  }
 }
 
 .sosial-media-list a:hover,
