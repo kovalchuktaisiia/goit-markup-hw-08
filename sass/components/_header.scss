@@ -5,12 +5,13 @@ header {
     border: 1px solid #ECECEC;
     position: relative;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        height: 80px;
-      }
+    // @media screen and (min-width: 768px) {
+    //     // display: flex;
+    //     height: 80px;
+    //   }
+}
 
-    & a {
+.menu-container a {
         color: $h2-color;
         font-weight: 500;
         font-size: 14px;
@@ -22,26 +23,16 @@ header {
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-}
 
-.nav {
-   justify-content: space-between;
-}
-
-.header-logo { 
-    height: 31px;
-    width: 145px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
+.header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
     @media screen and (min-width: 768px) {
-        display: contents;
-        height: 28px;
-        width: 134px;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        min-height: 80px;
       }
-}
+  }
 
 .menu-button {
     display: inline-flex;
