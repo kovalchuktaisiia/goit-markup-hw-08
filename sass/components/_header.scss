@@ -4,9 +4,14 @@ header {
     border: 1px; 
     border: 1px solid #ECECEC;
     position: relative;
+    height: 60px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        height: 80px;
+      }
 
     & a {
-       
         color: $h2-color;
         font-weight: 500;
         font-size: 14px;
@@ -20,16 +25,17 @@ header {
     }
 }
 
-.header {
-    align-items: center;
-}
-
 .header-logo { 
     height: 31px;
     width: 145px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: contents;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) {
+        display: contents;
+        height: 28px;
+        width: 134px;
+      }
 }
 
 .menu-button {
@@ -54,4 +60,42 @@ header {
   
   .menu-button.is-open .icon-menu {
     display: none;
+  }
+
+.menu-container {
+    background-color: palegoldenrod;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+  
+    @media screen and (max-width: 767px) {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+  
+      &.is-open {
+        display: block;
+      }
+    }
+  
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+  }
+  
+  .navigation,
+  .contacts {
+     width: 100%;
+  }
+  
+  .navigation {
+    outline: 1px solid teal;
+  }
+  
+  .contacts {
+    outline: 1px solid orange;
   }
