@@ -271,7 +271,7 @@ h3 {
   margin-top: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .to-order {
     display: block;
   }
