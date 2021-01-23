@@ -1189,8 +1189,14 @@ footer a {
 address {
   font-style: normal;
   padding-bottom: 60px;
-  display: inline-block;
   min-width: 230px;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  address {
+    display: inline-block;
+  }
 }
 
 address p:last-child {
@@ -1277,17 +1283,29 @@ address p:last-child {
 }
 
 .join {
-  display: inline-block;
+  display: block;
   text-align: left;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;
   padding-top: 72px;
   margin-left: 70px;
-  width: 206px;
+}
+
+@media screen and (min-width: 768px) {
+  .join {
+    display: inline-block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-width: 206px;
+  }
+}
+
+.join-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .media {
