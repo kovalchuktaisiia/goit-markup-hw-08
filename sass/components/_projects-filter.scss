@@ -5,10 +5,18 @@
 
     & .item {
     display: flex;
-    }
+       }
 
-    & .list {
-    justify-content: center;
+    & .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0px;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        display: inlone;
+        }
+
     }
 
     & .item + .item {
