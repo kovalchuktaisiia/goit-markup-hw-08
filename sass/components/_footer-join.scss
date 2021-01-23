@@ -16,12 +16,13 @@
         }
 }
 
-.join-us {
-    display: flex;
+.join-us-item {
+    display: inline-block;
 }
 
 .media {
     display: inline-block;
+    align-items: center;
     height: 44px;
     width: 44px;
     margin-right: 10px;

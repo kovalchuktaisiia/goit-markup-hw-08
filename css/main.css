@@ -1237,7 +1237,7 @@ address p:last-child {
   line-height: 16px;
   text-align: center;
   padding-bottom: 35px;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1348,14 +1348,15 @@ address p:last-child {
   }
 }
 
-.join-us {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.join-us-item {
+  display: inline-block;
 }
 
 .media {
   display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 44px;
   width: 44px;
   margin-right: 10px;
