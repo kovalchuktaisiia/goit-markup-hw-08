@@ -4,7 +4,6 @@ header {
     border: 1px; 
     border: 1px solid #ECECEC;
     position: relative;
-    height: 60px;
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -25,16 +24,23 @@ header {
     }
 }
 
+.nav {
+    display: flex;
+     justify-content: space-between;
+}
+
 .header-logo { 
     height: 31px;
     width: 145px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
     @media screen and (min-width: 768px) {
         display: contents;
         height: 28px;
         width: 134px;
+        margin-top: 25px;
+        margin-bottom: 25px;
       }
 }
 
