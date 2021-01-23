@@ -6,4 +6,8 @@ p {
     letter-spacing: 0.03em;
     color: $main-text-color;
     margin: 0px;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        }
 }

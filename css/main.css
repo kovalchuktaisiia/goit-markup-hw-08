@@ -856,6 +856,12 @@ p {
   margin: 0px;
 }
 
+@media screen and (max-width: 768px) {
+  p {
+    text-align: center;
+  }
+}
+
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1202,13 +1208,13 @@ footer a {
 address {
   font-style: normal;
   padding-bottom: 60px;
-  min-width: 230px;
   display: block;
 }
 
 @media screen and (min-width: 768px) {
   address {
     display: inline-block;
+    min-width: 230px;
   }
 }
 
