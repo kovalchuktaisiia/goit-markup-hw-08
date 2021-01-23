@@ -1,3 +1,4 @@
+
 .join {
     display: inline-block;
     text-align: left;
@@ -9,24 +10,6 @@
     padding-top: 72px;
     margin-left: 70px;
     width: 206px;
-
-    @media screen and (min-width: 480px) {
-        display: block;
-        }
-
-    @media screen and (max-width: 480px) {
-        width: auto;
-        margin: 0;
-        text-align: center;
-        }
-}
-
-.join .list {
-    @media screen and (max-width: 480px) {
-        display: flex;
-        margin: 0;
- }
-
 }
 
 .media {
@@ -40,7 +23,7 @@
     background-position: center;
     background-size: 20px;
     border-radius: 50%; 
-      
+
     &:hover,
     &:focus {
     background-color: $accent-link-color;

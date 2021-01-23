@@ -1162,10 +1162,6 @@ footer {
   border: 1px;
 }
 
-.footer {
-  width: 1200px;
-}
-
 .container-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1174,13 +1170,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-@media screen and (max-width: 480px) {
-  .container-footer {
-    display: block;
-    width: 480px;
-  }
 }
 
 footer a {
@@ -1197,12 +1186,30 @@ footer a {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 480px) {
-  .footer-logo {
-    display: block;
-    height: 28px;
-    width: 154px;
-  }
+address {
+  font-style: normal;
+  padding-bottom: 60px;
+  display: inline-block;
+  min-width: 230px;
+}
+
+address p:last-child {
+  margin-top: 10px;
+}
+
+.email-phone {
+  color: #757575;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+.city-adress {
+  color: #FFFFFF;
+  padding-bottom: 10px;
 }
 
 .subscribe {
@@ -1214,12 +1221,6 @@ footer a {
   font-weight: bold;
   line-height: 16px;
   padding-top: 72px;
-}
-
-@media screen and (max-width: 480px) {
-  .subscribe {
-    display: block;
-  }
 }
 
 .footer-subscribe {
@@ -1275,32 +1276,6 @@ footer a {
   color: #FFFFFF;
 }
 
-address {
-  font-style: normal;
-  padding-bottom: 60px;
-  display: inline-block;
-  min-width: 230px;
-}
-
-address p:last-child {
-  margin-top: 10px;
-}
-
-.email-phone {
-  color: #757575;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  margin-top: 10px;
-}
-
-.city-adress {
-  color: #FFFFFF;
-  padding-bottom: 10px;
-}
-
 .join {
   display: inline-block;
   text-align: left;
@@ -1313,29 +1288,6 @@ address p:last-child {
   padding-top: 72px;
   margin-left: 70px;
   width: 206px;
-}
-
-@media screen and (min-width: 480px) {
-  .join {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .join {
-    width: auto;
-    margin: 0;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .join .list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0;
-  }
 }
 
 .media {
