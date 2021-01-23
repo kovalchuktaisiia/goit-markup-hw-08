@@ -20,17 +20,19 @@ footer {
 
 footer a {
        text-decoration: none;  
+       display: block;
+       width: 100%;
 }
 
 .footer-logo { 
     height: 31px;
-    width: 145px;
+    display: inline-block;
     margin-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 
     @media screen and (min-width: 768px) {
+    width: 145px;
     display: inline-block;
-    text-align: center;
-    margin-bottom: 20px;
-    }
+   }
 }
