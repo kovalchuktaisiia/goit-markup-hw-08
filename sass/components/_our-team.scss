@@ -1,31 +1,24 @@
 
-.profession {
-    text-align: center;
-    padding-bottom: 25px;
-  }
-
 .our-team {
   background: $white-background;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-  padding-bottom: 0px;
-    }
+  @media screen and (min-width: 1140px) {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  }
 }
 
 .our-team-title {
-  margin-bottom: 50px;
-  padding-bottom: 0px;
-
-  @media screen and (min-width: 480px) {
-    margin-bottom: 30px;
-    }
+  padding-bottom: 25px;
+  @media screen and (min-width: 1140px) {
+  padding-bottom: 50px;
+  }
 }
 
 .team-player {
@@ -104,4 +97,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profession {
+  text-align: center;
+  padding-bottom: 25px;
 }
