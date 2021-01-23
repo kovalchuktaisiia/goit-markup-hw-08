@@ -22,6 +22,23 @@
             <nav class="list">
                 <a class="header-logo" href="./index.html"><img src="./images/WebStudio.svg" alt="логотип"></a>
                 
+                <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  aria-label="Переключатель мобильного меню"
+                >
+                  <use class="icon-cross" href="./svg/symbol-defs.svg#cross"></use>
+                  <use class="icon-menu" href="./svg/symbol-defs.svg#menu"></use>
+                </svg>
+              </button>
+
                 <ul class="header-list">
                     <li class="item"><a class="current studio" href="./index.html">Студия</a></li>
                     <li class="item"><a href="./portfolio.html">Портфолио</a></li>
@@ -318,6 +335,9 @@
          
                 
      </footer>
+
+     <script src="./js/menu.js"></script>
+     <script src="./js/modal.js"></script>
 
      <script>
         const refs = {
