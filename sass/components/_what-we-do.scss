@@ -5,6 +5,13 @@
 
 }
 
+.what-we-do-title {
+    padding-bottom: 25px;
+    @media screen and (min-width: 1140px) {
+    padding-bottom: 50px;
+    }
+  }
+
 .project-item-link {
     text-decoration: none; 
     margin: 0px;
