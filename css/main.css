@@ -1450,7 +1450,7 @@ footer a {
 
 .footer-logo {
   height: 31px;
-  display: inline-block;
+  display: block;
   margin-top: 60px;
   margin-bottom: 20px;
   text-align: center;
@@ -1459,7 +1459,21 @@ footer a {
 @media screen and (min-width: 768px) {
   .footer-logo {
     width: 145px;
-    display: inline-block;
+    display: block;
+  }
+}
+
+.footer-contacts {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    width: auto;
   }
 }
 
@@ -1469,7 +1483,7 @@ address {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1140px) {
   address {
     display: inline-block;
     min-width: 230px;
@@ -1619,6 +1633,12 @@ address p:last-child {
 }
 
 @media screen and (min-width: 768px) {
+  .join {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1140px) {
   .join {
     display: inline-block;
     -ms-flex-wrap: wrap;

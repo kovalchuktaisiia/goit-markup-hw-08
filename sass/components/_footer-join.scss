@@ -10,14 +10,22 @@
     line-height: 16px;
             
         @media screen and (min-width: 768px) {
-        display: inline-block;
-        flex-wrap: wrap;
-        min-width: 206px;
-        margin-left: 70px;
-        padding-top: 72px;
-        text-align: left;
+        // display: inline-block;
+        // flex-wrap: wrap;
+        // min-width: 206px;
+        // padding-top: 72px;
         width: auto;
         }
+
+        @media screen and (min-width: 1140px) {
+            display: inline-block;
+            flex-wrap: wrap;
+            min-width: 206px;
+            margin-left: 70px;
+            padding-top: 72px;
+            text-align: left;
+            width: auto;
+            }
 
     & .join-us {
         display: block;
