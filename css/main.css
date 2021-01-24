@@ -131,8 +131,8 @@ header {
 }
 
 .menu-container {
-  background-color: palegoldenrod;
   text-align: center;
+  background-color: #FFFFFF;
 }
 
 @media screen and (max-width: 767px) {
@@ -156,6 +156,9 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -169,16 +172,24 @@ header {
 
 .current {
   color: #2196F3;
+  position: relative;
 }
 
 .current::after {
   content: "";
-  bottom: -32px;
+  bottom: -5px;
   position: absolute;
   background-repeat: no-repeat;
-  display: block;
+  display: inline-block;
   height: 4px;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .current::after {
+    bottom: -32px;
+    display: block;
+  }
 }
 
 .studio::after {
@@ -191,8 +202,8 @@ header {
 
 .header-list {
   padding: 0px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -211,7 +222,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1140px) {
   .header-list {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -241,23 +252,48 @@ header {
 }
 
 .header-adres {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: right;
-  font-weight: 500;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin: 0px;
-  margin-left: auto;
+  padding: 0px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-adres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .header-adres {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 .header-adres .email-phone {
   font-weight: 500;
 }
 
-.header-adres .item + .item {
-  margin-left: 40px;
+@media screen and (max-width: 767px) {
+  .header-adres .item {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-adres .item + .item {
+    margin-left: 40px;
+  }
 }
 
 .envelope {

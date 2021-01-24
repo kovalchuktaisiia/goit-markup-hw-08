@@ -1,19 +1,43 @@
 
 .header-adres {
+    // display: flex;
+    // position: right;
+    // font-weight: 500;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+    // margin: 0px;
+    // margin-left: auto;
+    padding: 0px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {   
     display: flex;
-    position: right;
-    font-weight: 500;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0px;
-    margin-left: auto;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0px; 
+    }
+
+    @media screen and (min-width: 1140px){
+        justify-content: flex-end;
+       
+    }
 
     & .email-phone {
     font-weight: 500;
     }
 
+    & .item {
+        @media screen and (max-width: 767px){
+            margin-bottom: 15px;
+        }
+    }
+
     & .item + .item {
-    margin-left: 40px;
+        @media screen and (min-width: 768px) {
+            margin-left: 40px;
+        }
+   
     }
 }
 

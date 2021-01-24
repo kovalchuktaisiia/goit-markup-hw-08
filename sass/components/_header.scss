@@ -63,8 +63,8 @@ header {
   }
 
 .menu-container {
-    background-color: palegoldenrod;
-    text-align: center;
+     text-align: center;
+     background-color: $white-background;
 
   
     @media screen and (max-width: 767px) {
@@ -82,6 +82,7 @@ header {
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
       flex-grow: 1;
     }
   }
@@ -91,10 +92,3 @@ header {
      width: 100%;
   }
   
-  // .navigation {
-  //   outline: 1px solid teal;
-  // }
-  
-  // .contacts {
-  //   outline: 1px solid orange;
-  // }
