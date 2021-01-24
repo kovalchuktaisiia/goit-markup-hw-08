@@ -1471,38 +1471,52 @@ address p:last-child {
   padding-top: 40px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1140px) {
   .subscribe {
-    display: inline-block;
+    text-align: left;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
     margin-left: 90px;
     padding-top: 72px;
+    padding-bottom: 0px;
   }
+}
+
+.subscribe .subscribe-title {
+  padding-bottom: 15px;
 }
 
 .footer-subscribe {
   display: block;
   margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1140px) {
   .footer-subscribe {
-    text-align: right;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    text-align: right;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
 .subscribe-button {
   display: inline-block;
   background: #2196F3;
-  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 20px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1519,15 +1533,11 @@ address p:last-child {
   min-width: 200px;
 }
 
-@media screen and (min-width: 768px) {
-  .subscribe-button {
-    display: block;
-  }
-}
-
 @media screen and (min-width: 1140px) {
   .subscribe-button {
     margin: 0px;
+    margin-left: 20px;
+    padding: 0px;
   }
 }
 
@@ -1576,6 +1586,18 @@ address p:last-child {
     margin-left: 70px;
     padding-top: 72px;
     text-align: left;
+  }
+}
+
+.join .join-us {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .join .join-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
