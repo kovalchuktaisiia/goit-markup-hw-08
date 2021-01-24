@@ -1,5 +1,8 @@
 .subscribe {
-    display: block;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
