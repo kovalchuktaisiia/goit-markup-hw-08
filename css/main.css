@@ -180,7 +180,7 @@ header {
   bottom: -5px;
   position: absolute;
   background-repeat: no-repeat;
-  display: inline-block;
+  display: block;
   height: 4px;
   width: 100%;
 }
@@ -244,6 +244,7 @@ header {
 @media screen and (min-width: 768px) {
   .header-list .item {
     margin-right: 45px;
+    margin-bottom: 0px;
   }
 }
 
@@ -255,6 +256,7 @@ header {
   padding: 0px;
   margin-top: 60px;
   margin-bottom: 60px;
+  color: #757575;
 }
 
 @media screen and (min-width: 768px) {
@@ -281,7 +283,12 @@ header {
 }
 
 .header-adres .email-phone {
+  color: #757575;
   font-weight: 500;
+}
+
+.header-adres .item {
+  color: #757575;
 }
 
 @media screen and (max-width: 767px) {
