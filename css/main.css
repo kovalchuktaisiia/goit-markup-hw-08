@@ -114,6 +114,10 @@ header {
   }
 }
 
+.menu-button:hover, .menu-button:focus {
+  fill: #2196F3;
+}
+
 .menu-button .icon-cross {
   display: none;
 }
@@ -128,9 +132,7 @@ header {
 
 .menu-container {
   background-color: palegoldenrod;
-  padding: 20px;
   text-align: center;
-  font-size: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -163,14 +165,6 @@ header {
 .navigation,
 .contacts {
   width: 100%;
-}
-
-.navigation {
-  outline: 1px solid teal;
-}
-
-.contacts {
-  outline: 1px solid orange;
 }
 
 .current {

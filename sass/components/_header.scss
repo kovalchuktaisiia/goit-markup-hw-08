@@ -44,6 +44,10 @@ header {
     @media screen and (min-width: 768px) {
       display: none;
     }
+    &:hover,
+    &:focus {
+    fill: $accent-link-color;
+    }
   }
   
   .menu-button .icon-cross {
@@ -60,9 +64,8 @@ header {
 
 .menu-container {
     background-color: palegoldenrod;
-    padding: 20px;
     text-align: center;
-    font-size: 20px;
+    // font-size: 20px;
   
     @media screen and (max-width: 767px) {
       display: none;
@@ -88,10 +91,10 @@ header {
      width: 100%;
   }
   
-  .navigation {
-    outline: 1px solid teal;
-  }
+  // .navigation {
+  //   outline: 1px solid teal;
+  // }
   
-  .contacts {
-    outline: 1px solid orange;
-  }
+  // .contacts {
+  //   outline: 1px solid orange;
+  // }
