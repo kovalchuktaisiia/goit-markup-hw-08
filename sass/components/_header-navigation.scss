@@ -13,7 +13,6 @@
 }
 }
 
-
 .studio::after {
     background-image: url(../svg/hover-studio.svg);
 }
@@ -23,19 +22,35 @@
 }
 
 .header-list {
-   
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+    @media screen and (min-width: 768px) {   
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    align-items: baseline;
+    justify-content: center;
     padding-left: 90px;
     margin: 0px; 
-
-    a {
-        position: relative;
     }
 
-    .item{
-    margin-right: 45px;
+    @media screen and (min-width: 768px){
+        justify-content: flex-start;
+    }
+
+    a {
+        @media screen and (min-width: 768px) {
+        position: relative;
+        }
+    }
+
+    .item {
+    margin-right: 0px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px){
+        margin-right: 45px; 
+    }
 }
 
     .item:last-child {
