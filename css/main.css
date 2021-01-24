@@ -1448,21 +1448,6 @@ footer a {
   width: 100%;
 }
 
-.footer-logo {
-  height: 31px;
-  display: block;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-logo {
-    width: 145px;
-    display: block;
-  }
-}
-
 .footer-contacts {
   display: inline-block;
   margin-left: auto;
@@ -1477,15 +1462,31 @@ footer a {
   }
 }
 
+.footer-logo {
+  height: 31px;
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1140px) {
+  .footer-logo {
+    width: 145px;
+    display: block;
+  }
+}
+
 address {
   font-style: normal;
-  padding-bottom: 60px;
-  display: block;
+  padding-bottom: 50px;
+  display: inline-block;
+  text-align: center;
 }
 
 @media screen and (min-width: 1140px) {
   address {
-    display: inline-block;
+    display: block;
     min-width: 230px;
   }
 }
@@ -1502,11 +1503,27 @@ address p:last-child {
   line-height: 24px;
   letter-spacing: 0.03em;
   margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1140px) {
+  .email-phone {
+    text-align: left;
+    display: block;
+  }
 }
 
 .city-adress {
   color: #FFFFFF;
   padding-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1140px) {
+  .city-adress {
+    text-align: left;
+    display: block;
+  }
 }
 
 .subscribe {

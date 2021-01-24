@@ -12,12 +12,12 @@
 
 .footer-logo { 
     height: 31px;
-    display: block;
+    display: inline-block;
     margin-top: 60px;
     margin-bottom: 20px;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1140px) {
     width: 145px;
     display: block;
    }
@@ -25,11 +25,12 @@
 
 address {
     font-style: normal;
-    padding-bottom: 60px;
-    display: block;
+    padding-bottom: 50px;
+    display: inline-block;
+    text-align: center;
     
     @media screen and (min-width: 1140px) {
-        display: inline-block;
+        display: block;
         min-width: 230px;
         }
     
@@ -46,10 +47,20 @@ address {
         line-height: 24px;
         letter-spacing: 0.03em;
         margin-top: 10px; 
+        text-align: center;
+        @media screen and (min-width: 1140px) {
+            text-align: left;
+            display: block;
+           }
     }
     
     .city-adress {
         color: $white-background;
         padding-bottom: 10px;
+        text-align: center;
+        @media screen and (min-width: 1140px) {
+            text-align: left;
+            display: block;
+           }
     }
     
