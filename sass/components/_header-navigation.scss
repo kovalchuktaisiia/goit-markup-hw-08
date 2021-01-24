@@ -6,9 +6,10 @@
     &::after {
     content: "";
     bottom: -5px;
+    left: 0px;
     position: absolute;
     background-repeat: no-repeat;
-    display: block;
+    display: inline-block;
     height: 4px;
     width: 100%;
     @media screen and (min-width: 768px){
