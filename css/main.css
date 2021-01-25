@@ -35,6 +35,13 @@ html {
           box-sizing: border-box;
 }
 
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+}
+
 .list {
   display: block;
   text-align: center;
