@@ -1218,6 +1218,7 @@ p {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   margin-bottom: 0px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -1282,7 +1283,6 @@ p {
 }
 
 .project-item .project-item-photo {
-  position: relative;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
@@ -1295,7 +1295,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 70%;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
   -webkit-transform: translateY(100%);
@@ -1316,7 +1316,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 70%;
   opacity: 1;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
