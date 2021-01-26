@@ -18,12 +18,12 @@
     padding-bottom: 200px;
     margin: 0%;
 
-    @media screen and (max-width: 480px) {
-        display: block;
-        height: 400px;
+    @media screen and (max-width: 1140px) {
+        // display: block;
+        max-height: 400px;
         padding-top: 120px;
         padding-bottom: 120px;
-        width: 480px;
+        // width: 480px;
       }
 }
 
@@ -34,6 +34,7 @@
   screen and (min-resolution: 2dppx) {
   .main-banner  {
     background-image: url(../images/main_banner_2.jpg);
+   
   }
 }
 
