@@ -62,9 +62,9 @@ header {
   justify-content: center;
      text-align: center;
      background-color: $white-background;
-
-  
-    @media screen and (max-width: 767px) {
+     
+    
+    @media screen and (max-width: 766px) {
       display: none;
       position: absolute;
       top: 100%;
@@ -77,10 +77,10 @@ header {
       }
     }
   
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: baseline;
       flex-grow: 1;
     }
   }
