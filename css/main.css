@@ -427,13 +427,11 @@ h3 {
   margin: 0%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1140px) {
   .main-banner {
-    display: block;
-    height: 400px;
+    max-height: 400px;
     padding-top: 120px;
     padding-bottom: 120px;
-    width: 480px;
   }
 }
 
